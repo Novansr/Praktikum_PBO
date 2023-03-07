@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package Posttest_1;
 
 import java.util.Scanner;
@@ -10,21 +6,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-/**
- *
- * @author Hp
- */
 
-//Rextor_Speed_Shop as RSS
 class RSS{
-//Tipe Data
+
    private int Id;
    private int Jumlah;
    private String Merek;
    private String Barang;
    private int Harga;
 
-//Nama Variabel
+
    RSS(int Id,int Jumlah, String Merek, String Barang, int Harga){
       this.Id = Id;
       this.Jumlah = Jumlah;
@@ -54,9 +45,7 @@ class RSS{
 
 public class Posttest_1 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
       List <RSS> prt = new ArrayList <>();
       Scanner Str = new Scanner(System.in);
