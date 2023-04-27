@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 
-class RSS{
+class MUSIK{
 
    private int Id;
    private int Jumlah;
@@ -16,7 +16,7 @@ class RSS{
    private int Harga;
 
 
-   RSS(int Id,int Jumlah, String Jenis, String Barang, int Harga){
+   MUSIK(int Id,int Jumlah, String Jenis, String Barang, int Harga){
       this.Id = Id;
       this.Jumlah = Jumlah;
       this.Jenis = Jenis;
@@ -47,7 +47,7 @@ public class Posttest1 {
 
 
     public static void main(String[] args) {
-      List <RSS> prt = new ArrayList <>();
+      List <MUSIK> prt = new ArrayList <>();
       Scanner Str = new Scanner(System.in);
       Scanner Intr = new Scanner(System.in);
 
@@ -67,9 +67,9 @@ public class Posttest1 {
         switch(pilih){
             case 1:
             //Lihat data
-               Iterator<RSS> i = prt.iterator();
+               Iterator<MUSIK> i = prt.iterator();
                System.out.println("|------------Stok toko -----------|");
-               for (RSS b : prt) {
+               for (MUSIK b : prt) {
                    System.out.println(" ");
                    System.out.println("ID Barang     : " + b.getId());
                    System.out.println("Jumlah Barang : " + b.getJumlah());
@@ -87,13 +87,13 @@ public class Posttest1 {
                System.out.print("Masukkan Nama Barang   : "); String Barang = Str.nextLine();
                System.out.print("Masukkan Jenis Barang   : "); String Jenis = Str.nextLine();
                System.out.print("Masukkan harga         : "); int Harga = Intr.nextInt();
-               prt.add(new RSS(ID,Jumlah,Barang,Jenis,Harga));
+               prt.add(new MUSIK(ID,Jumlah,Barang,Jenis,Harga));
             break;
 
             case 3:
             //Hapus Data 
                System.out.println("|--------------Stok toko ------------|");
-               for (RSS b : prt) {
+               for (MUSIK b : prt) {
                    System.out.println(" ");
                    System.out.println("ID Barang     : " + b.getId());
                    System.out.println("Jumlah Barang : " + b.getJumlah());
@@ -109,7 +109,7 @@ public class Posttest1 {
                     System.out.print("\n");
                i = prt.iterator();
                while(i.hasNext()){
-                  RSS e = i.next();
+                  MUSIK e = i.next();
                   if(e.getId() == Id) {
                      i.remove();
                      found = true;
@@ -128,7 +128,7 @@ public class Posttest1 {
             case 4:
             //Update data
                System.out.println("|-------------Stok Toko------------|");
-               for (RSS b : prt) {
+               for (MUSIK b : prt) {
                    System.out.println(" ");
                    System.out.println("ID Barang     : " + b.getId());
                    System.out.println("Jumlah Barang : " + b.getJumlah());
@@ -141,9 +141,9 @@ public class Posttest1 {
                     System.out.print("Masukkan ID yang ingin diupdate :");
                Id = Intr.nextInt();
                
-               ListIterator<RSS>li = prt.listIterator();
+               ListIterator<MUSIK>li = prt.listIterator();
                while(li.hasNext()){
-                  RSS e = li.next();
+                  MUSIK e = li.next();
                   if(e.getId() == Id)  {
                      System.out.print("Masukkan Nama Barang Baru : ");
                         Barang = Str.nextLine();
@@ -154,7 +154,7 @@ public class Posttest1 {
                      System.out.print("Masukkan Harga Baru       : ");
                         Harga = Intr.nextInt();
                      
-                     li.set(new RSS(Id,Jumlah,Barang,Jenis,Harga));
+                     li.set(new MUSIK(Id,Jumlah,Barang,Jenis,Harga));
                      found = true;
                     }
                 }
