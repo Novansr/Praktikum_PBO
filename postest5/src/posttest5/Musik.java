@@ -35,16 +35,16 @@ public class Musik {
         this.Id = IdBaru;
     }
     public void setJumlah(String JumlahBaru){
-        this.Id = JumlahBaru;
+        this.Jumlah = JumlahBaru;
     }
     public void setBarang(String BarangBaru){
-        this.Id = BarangBaru;
+        this.Barang = BarangBaru;
     } 
     public void setJenis(String JenisBaru){
-        this.Id = JenisBaru;
+        this.Jenis = JenisBaru;
     }
     public void setHarga(String HargaBaru){
-        this.Id = HargaBaru;
+        this.Harga = HargaBaru;
     }
     
     public void display(){
