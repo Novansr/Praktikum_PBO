@@ -31,7 +31,10 @@ public class drum extends Musik{
     @Override
     public void display(){
         super.display();
-        System.out.println("Jenis : " + this.Merk);
-        System.out.println("Scale : " + this.scale);
+        System.out.println("Id Barang  : " + this.Id);
+        System.out.println("Jumlah Barang  : " + this.Jumlah);
+        System.out.println("Nama Barang  : " + this.Barang);
+        System.out.println("Jenis Barang  : " + this.Jenis);
+        System.out.println("Harga Barang : " + this.Harga);
     }
 }
