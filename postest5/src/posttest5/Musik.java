@@ -14,7 +14,7 @@ public class Musik {
         this.Barang = Barang;
         this.Harga = Harga;}
     
-    // Method getter
+    //Method getter
     public String getId(){
         return this.Id;}
 
