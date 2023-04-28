@@ -29,7 +29,6 @@ public class Musik {
     
     public String getHarga(){
         return this.Harga;}
-    
     // Method setter
     public void setId(String IdBaru){
         this.Id = IdBaru;
